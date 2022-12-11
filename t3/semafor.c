@@ -31,11 +31,13 @@ int main(int argc, char **argv)
 	create_buf();
 	create_sem_struct();
 
-	for(int i = 0; i < reader_amount; i++)
+	for(int i = 0; i < reader_amount; i++) {
 		create_reader(messages_to_read);
-	for(int i = 0; i < writer_amount; i++)
+	}
+	for(int i = 0; i < writer_amount; i++) {
 		create_writer(messages_to_write, msg_id);
-
+	}
+	wait(NULL);
 	return 0;
 }
 
