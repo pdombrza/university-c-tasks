@@ -8,4 +8,5 @@ Synchronizacja dostępu do bufora za pomocą monitora
 ```
 cmake -B build
 make -C build all
+./build/monitor
 ```
