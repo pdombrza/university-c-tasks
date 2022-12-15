@@ -20,8 +20,8 @@ struct buffer
   message_t contents[REAL_CAPACITY];
 };
 
-void write_buf(struct buffer* bufor, message_t wartosc);
-message_t read_buf(struct buffer* bufor);
+void write_buf(struct buffer* buffer, message_t msg);
+message_t read_buf(struct buffer* buffer);
 
 
 #endif
