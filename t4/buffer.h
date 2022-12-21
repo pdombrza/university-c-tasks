@@ -1,7 +1,6 @@
 #ifndef __bufor_h
 #define __bufor_h
 
-#include <string>
 #include <iostream>
 #include "monitor.h"
 #include "message.h"
@@ -9,16 +8,15 @@
 #define CAPACITY 5
 #define REAL_CAPACITY (CAPACITY + 1)
 
-
 void write_buf(struct Buffer* buffer, message_t msg);
 message_t read_buf(struct Buffer* buffer);
 void reader_read(int reader_id, int messages_to_read);
 void writer_write(int writer_id, int messages_to_write);
 unsigned int get_sleep_time();
+int get_message_id();
 
 struct Buffer : Monitor
 {
-    int buf_id = 0;
     int write_idx = 0;
     int read_idx = 0;
     int buff_size = REAL_CAPACITY;
@@ -54,5 +52,6 @@ struct Buffer : Monitor
         return msg;
     }
 };
+
 
 #endif
