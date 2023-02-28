@@ -1,6 +1,4 @@
 .vscode
 build
 shell
-semafor
-semapfore
-t4_alt
+CMakeCache.txt
