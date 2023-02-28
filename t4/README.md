@@ -1,10 +1,10 @@
-# Lab 4 - monitory
-## Bufor FIFO
-Utworzenie bufora cyklicznego FIFO, synchronizacja zapisu i odczytu
-poprzez wątki piszące i czytające
+# Monitors
+## FIFO Buffer
+Created cyclic FIFO buffer, created multiple threads
+reading and writing to buffer.
 ## Monitor
-Synchronizacja dostępu do bufora za pomocą monitora
-## Instalacja
+Synchronized buffer access using monitors
+## Installation
 ```
 cmake -B build
 make -C build all
