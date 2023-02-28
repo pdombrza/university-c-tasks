@@ -1,6 +1,11 @@
-# Lab 3 - semafory
-## Bufor FIFO
-Utworzenie bufora cyklicznego FIFO i udostępnienie go dla procesów
-piszących i czytających poprzez utworzenie segmentu wspólnej pamięci
-## Semafory
-Synchronizacja dostępu do bufora za pomocą 3 semaforów
+# Lab 3 - semaphores
+## FIFO Buffer
+Created cyclic FIFO buffer and created multiple processes
+reading and writing to buffer.
+## Semaphores
+Synchronized buffer access using 3 semaphores.
+## Installation and usage
+```
+make
+./semafor <writer_amount> <how_many_write> <reader_amount> <how_many_read>
+```

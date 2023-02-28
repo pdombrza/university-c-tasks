@@ -1,7 +1,8 @@
-#include "string.h"
-
 #ifndef __bufor_h
 #define __bufor_h
+
+#include "string.h"
+
 
 typedef struct MSG_T message_t;
 #define CAPACITY 5

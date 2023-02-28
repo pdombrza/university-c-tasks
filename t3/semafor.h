@@ -1,8 +1,9 @@
+#ifndef __semafor_h
+#define __semafor_h
+
 #include <string.h>
 #include <semaphore.h>
 
-#ifndef __semafor_h
-#define __semafor_h
 
 struct buffer *create_buf();
 struct buffer *alloc_buf();
